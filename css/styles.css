@@ -448,6 +448,7 @@ label {
 
 .button-submit {
   cursor: pointer;
+  background-repeat: no-repeat;
 
   margin-top: 40px;
   padding: 10px 55px;
