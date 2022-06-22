@@ -66,6 +66,7 @@ label {
 .link {
   text-decoration: none;
 }
+
 /*======= Header =======*/
 
 .header {
@@ -77,8 +78,7 @@ label {
   align-items: center;
 }
 
-.header-nav {
-}
+.header-nav {}
 
 .main-logo-blue {
   color: var(--accent-color);
@@ -197,10 +197,8 @@ label {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4) 100%,
-      rgba(47, 48, 58, 0.4) 100%
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 100%,
+      rgba(47, 48, 58, 0.4) 100%),
     url(../images/overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -208,7 +206,8 @@ label {
   background-color: var(--third-background-color);
 
   padding: 200px 0;
-  text-align: center; /* center text and all inline element inside this block*/
+  text-align: center;
+  /* center text and all inline element inside this block*/
 }
 
 .main-title {
@@ -318,6 +317,10 @@ label {
   border-radius: 4px;
 
   outline: none;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .form-icon {
@@ -329,13 +332,28 @@ label {
   left: 12px;
   width: 18px;
   height: 18px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .form-input:focus-within {
   border-color: var(--accent-color);
 }
 
-.form-field:focus-within > .form-icon {
+.form-field:focus-within>.form-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:hover {
+  cursor: pointer;
+  border-color: var(--accent-color);
+
+}
+
+.form-field:hover .form-icon {
+
   fill: var(--accent-color);
 }
 
@@ -350,9 +368,17 @@ label {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .form-textarea:focus-within {
+  border-color: var(--accent-color);
+}
+
+.form-textarea:hover {
   border-color: var(--accent-color);
 }
 
@@ -412,7 +438,7 @@ label {
   color: var(--accent-color);
 }
 
-.checkbox:checked + .check-icon {
+.checkbox:checked+.check-icon {
   border-color: transparent;
   background-color: var(--accent-color);
   background-image: url("../images/icon-check.svg");
@@ -847,7 +873,7 @@ label {
   transition-timing-function: var(--timing-function);
 }
 
-.overlay > p {
+.overlay>p {
   color: var(--background-color);
   font-size: 18px;
   line-height: 1.56;
@@ -919,8 +945,7 @@ label {
   margin-bottom: 30px;
 }
 
-.footer-list {
-}
+.footer-list {}
 
 .footer-list .item:not(:last-child) {
   margin-bottom: 9px;
@@ -1010,8 +1035,7 @@ label {
   transition-timing-function: var(--timing-function);
 }
 
-.button-social .team {
-}
+.button-social .team {}
 
 .button-icon {
   fill: var(--background-color);
@@ -1050,7 +1074,7 @@ label {
 }
 
 .footer-button {
-position: relative;
+  position: relative;
   cursor: pointer;
   font-family: var(--main-font-family);
   color: var(--background-color);
@@ -1060,7 +1084,7 @@ position: relative;
   line-height: 1.88;
   letter-spacing: 0.06em;
   padding-left: 29px;
-  padding-right: 62px;
+  padding-right: 60px;
   margin-left: 12px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1069,12 +1093,12 @@ position: relative;
 }
 
 .subscribe {
- padding-right: 10px;
+  padding-right: 10px;
 }
 
 .icon-send {
   position: absolute;
-  
+
   content: "";
   width: 24px;
   height: 24px;
