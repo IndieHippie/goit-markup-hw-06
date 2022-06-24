@@ -61,7 +61,7 @@
           <div class="modal">
 
 
-            <h3 class="modal-item-name">Оставьте свои данные, мы вам перезвоним</h3>
+            <p class="modal-item-name">Оставьте свои данные, мы вам перезвоним</p>
             <form class="form">
 
               <div class="thumb">
@@ -70,28 +70,28 @@
                     <use href="./images/icons.svg#icon-person"></use>
                   </svg>
                   <span class="form-lable">Имя</span>
-                  <input type="text" class="form-input" name="username">
+                  <input type="text" class="form-input" name="username" required />
                 </label>
                 <label class="form-field">
                   <svg class="form-icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                   <span class="form-lable">Телефон</span>
-                  <input type="tel" class="form-input" name="phone_number">
+                  <input type="tel" class="form-input" name="phone_number" required />
                 </label>
                 <label class="form-field">
                   <svg class="form-icon">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                   <span class="form-lable">Почта</span>
-                  <input type="email" class="form-input" name="mail">
+                  <input type="email" class="form-input" name="mail" required />
                 </label>
                 <label class="form-field">
                   <span class="form-lable">Комментарий</span>
                   <textarea name="feedback" class="form-textarea" rows="5" placeholder="Введите текст"></textarea>
                 </label>
                 <label class="form-checkbox">
-                  <input type="checkbox" class="checkbox" name="topic" />
+                  <input type="checkbox" class="checkbox" name="topic" required/>
                   <span class="check-icon"></span>
                   <span class="lable-checkbox"> Соглашаюсь с рассылкой и принимаю </span><a class="checkbox-link"
                     href="#">Условия договора</a>
@@ -411,7 +411,7 @@
         </address>
       </div>
       <div class="central-box">
-        <h3 class="footer-link">Присоединяйтесь</h3>
+        <p class="footer-link">Присоединяйтесь</p>
         <ul class="social-list list">
           <li>
             <a href="#" class="button-social">
@@ -444,11 +444,11 @@
         </ul>
       </div>
       <div class="right-box">
-        <h3 class="footer-link">Подпишитесь на рассылку</h3>
+        <p class="footer-link">Подпишитесь на рассылку</p>
         <form>
           <div class="right-thumb">
             <label class="footer-field">
-              <input type="text" class="footer-input" name="mail" placeholder="E-mail">
+              <input type="text" class="footer-input" name="mail" placeholder="E-mail"required>
             </label>
             <button class="footer-button" type="submit"><span class="subscribe">Подписаться</span>
               <svg class="icon-send">
