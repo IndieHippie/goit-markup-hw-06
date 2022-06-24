@@ -339,7 +339,7 @@ label {
 }
 
 .form-icon {
-  background-repeat: no-repeat;
+  
   display: inline-block;
   content: "";
   position: absolute;
@@ -457,6 +457,7 @@ label {
 }
 
 .checkbox:checked+.check-icon {
+  background-repeat: no-repeat;
   border-color: transparent;
   background-color: var(--accent-color);
   background-image: url("../images/icon-check.svg");
