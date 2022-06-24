@@ -253,7 +253,7 @@ label {
 
 .backdrop {
   z-index: 1;
-  
+
   position: fixed;
   width: 100%;
   height: 100%;
@@ -339,6 +339,7 @@ label {
 }
 
 .form-icon {
+  background-repeat: no-repeat;
   display: inline-block;
   content: "";
   position: absolute;
