@@ -68,6 +68,25 @@ label {
   text-decoration: none;
 }
 
+/* ==== Logo ==== */
+
+.logo {
+  margin-right: 120px;
+  color: var(--color);
+  font-family: var(--second-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__text {
+  color: var(--accent-color);
+  font-family: var(--second-font-family);
+}
+
+
+
 /*======= Header =======*/
 
 .header {
@@ -79,20 +98,6 @@ label {
   align-items: center;
 }
 
-.main-logo {
-  margin-right: 120px;
-  color: var(--color);
-  font-family: var(--second-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.main-logo__header {
-  color: var(--accent-color);
-  font-family: var(--second-font-family);
-}
 
 .header-nav__list {
   display: flex;
@@ -123,12 +128,12 @@ label {
   color: var(--accent-color);
 }
 
-.header-nav__active {
+.header-nav__link--active {
   position: relative;
   color: var(--accent-color);
 }
 
-.header-nav__active::after {
+.header-nav__link--active::after {
   content: "";
 
   position: absolute;
@@ -699,7 +704,7 @@ label {
   padding: 0;
 }
 
-.networks-list__card {
+.networks-list__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -725,8 +730,8 @@ label {
   transition-timing-function: var(--timing-function);
 }
 
-.networks-list__card:hover,
-.networks-list__card:focus {
+.networks-list__link:hover,
+.networks-list__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -734,8 +739,8 @@ label {
   margin-right: 10px;
 }
 
-.networks-list__card:hover .networks-list__icon,
-.networks-list__card:focus .networks-list__icon {
+.networks-list__link:hover .networks-list__icon,
+.networks-list__link:focus .networks-list__icon {
   fill: var(--background-color);
 }
 
@@ -934,72 +939,14 @@ label {
 .footer-box {
   display: flex;
   align-items: baseline;
+  justify-content: center;
 }
 
-.main-logo__footer {
+.footer__logo {
   font-family: var(--second-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
   color: var(--background-color);
-
-  margin-bottom: 30px;
+  margin-right: 0;
 }
-
-.footer-list {
-
-}
-
-.footer-list__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.address {
-  margin-top: 20px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--background-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-
-.address:hover,
-.address:focus {
-  color: var(--accent-color);
-}
-
-.footer-list__link {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-contact-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-
-/* .contact-tel-footer {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-contact-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-} */
-
-.footer-list__link:hover,
-.footer-list__link:focus {
-  color: var(--accent-color);
-}
-
-/* .contact-tel-footer:hover,
-.contact-tel-footer:focus {
-  color: var(--accent-color);
-} */
-
-/* ==== Join us ==== */
 
 .box-title {
   color: var(--background-color);
@@ -1011,8 +958,54 @@ label {
   margin-bottom: 20px;
 }
 
+/*===== Address =====*/
+
+.address-list {
+  margin-top: 20px;
+
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__location {
+  margin-top: 20px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.address-list__location:hover,
+.address-list__location:focus {
+  color: var(--accent-color);
+}
+
+.address-list__link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+
+.address-list__link:hover,
+.address-list__link:focus {
+  color: var(--accent-color);
+}
+
+
+/* ==== Join us ==== */
+
+
 .central-box {
-  margin-left: 70px;
+  margin-left: 84px;
 }
 
 .social-list {
